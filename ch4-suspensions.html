@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suspensions – Chapter 4 | Pharmaceutics I D-Pharma Notes</title>
+  <meta name="description" content="Complete D-Pharma notes on Pharmaceutical Suspensions. Stokes Law, flocculation, suspending agents, formulation, stability and evaluation." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    html,body{overflow-x:hidden!important;width:100%;max-width:100%;}
+    main,section,.container,header,footer,article{max-width:100%;overflow-x:hidden;}
+    .two-col-layout{display:block!important;}.sidebar-sticky{display:none!important;}
+    @media(min-width:900px){.two-col-layout{display:grid!important;grid-template-columns:1fr 260px;gap:2rem;align-items:start;}.sidebar-sticky{display:block!important;position:sticky;top:110px;}}
+    .chapter-content{padding:1rem;border-radius:12px;}@media(min-width:640px){.chapter-content{padding:1.75rem;}}
+    .info-box{word-break:break-word;overflow-wrap:break-word;}
+    .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:.75rem 0;border-radius:8px;border:1px solid #e2e8f0;display:block;}
+    .table-wrap table{margin:0;min-width:380px;border-collapse:collapse;width:100%;}
+    th,td{padding:.5rem .7rem;border:1px solid var(--border,#e2e8f0);font-size:.85rem;}
+    th{background:var(--primary,#1e2e6e);color:#fff;font-weight:700;}tr:nth-child(even) td{background:var(--bg-alt,#f8fafc);}
+    .content-nav{flex-direction:column!important;}.content-nav .btn{justify-content:center;}@media(min-width:500px){.content-nav{flex-direction:row!important;}}
+    .site-footer{overflow:hidden;}.footer-grid{display:grid!important;grid-template-columns:1fr!important;gap:1.25rem!important;margin-bottom:1.75rem;}
+    .footer-col ul{display:flex!important;flex-wrap:wrap;gap:.3rem .75rem;}.footer-col ul li a{font-size:.78rem;white-space:nowrap;}
+    .footer-bottom{flex-direction:column!important;align-items:flex-start!important;gap:.25rem!important;}.footer-bottom p{font-size:.72rem;word-break:break-word;}
+    @media(min-width:560px){.footer-grid{grid-template-columns:1fr 1fr!important;}}
+    @media(min-width:1024px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr!important;}.footer-col ul{flex-direction:column!important;gap:.5rem;}.footer-bottom{flex-direction:row!important;align-items:center!important;justify-content:space-between!important;}}
+    #searchOverlay{position:fixed!important;inset:0!important;z-index:99999!important;background:rgba(10,15,35,.88)!important;backdrop-filter:blur(12px)!important;display:flex!important;align-items:flex-start!important;justify-content:center!important;padding-top:4rem!important;opacity:0;pointer-events:none;transition:opacity .2s;}
+    #searchOverlay.open{opacity:1!important;pointer-events:all!important;}
+    #searchOverlay .search-box{background:#fff!important;border-radius:18px!important;box-shadow:0 24px 64px rgba(0,0,0,.35)!important;width:calc(100% - 2rem)!important;max-width:540px!important;overflow:hidden!important;transform:translateY(-12px);transition:transform .2s;}
+    #searchOverlay.open .search-box{transform:translateY(0)!important;}
+    #searchOverlay .search-box-top{display:flex!important;align-items:center!important;gap:.7rem!important;padding:.9rem 1.1rem!important;border-bottom:1.5px solid #e2e8f0!important;}
+    #searchOverlay .search-box-top input{flex:1!important;border:none!important;outline:none!important;font-size:1rem!important;color:#0f172a!important;background:transparent!important;font-family:inherit!important;}
+    #searchOverlay .search-x{width:28px!important;height:28px!important;border-radius:6px!important;border:1px solid #e2e8f0!important;background:#f8fafc!important;color:#64748b!important;cursor:pointer!important;font-size:.75rem!important;display:flex!important;align-items:center!important;justify-content:center!important;}
+    #searchOverlay .search-results-wrap{max-height:360px!important;overflow-y:auto!important;padding:.75rem!important;}
+    #searchOverlay .search-box-foot,#searchOverlay .search-empty small{display:none!important;}
+    #searchOverlay .search-empty{text-align:center!important;padding:2rem 1rem!important;color:#94a3b8!important;}
+    #searchOverlay .search-result-item{display:flex!important;align-items:center!important;gap:.7rem!important;padding:.7rem .8rem!important;border-radius:10px!important;text-decoration:none!important;color:#0f172a!important;}
+    #searchOverlay .search-result-item:hover{background:#f0f4ff!important;}
+  </style>
+</head>
+<body>
+<header class="site-header"><nav class="nav-container"><a class="nav-brand" href="index.html"><div class="nav-logo"><i class="fa-solid fa-flask-vial"></i></div><div class="nav-brand-text"><span class="nav-brand-name">D-Pharma Learn</span><span class="nav-brand-tag">Free Education</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="year1.html" class="active">1st Year</a></li><li><a href="year2.html">2nd Year</a></li><li><a href="syllabus.html">Syllabus</a></li><li><a href="about.html">About</a></li></ul><div class="nav-cta"><button class="search-toggle-btn" id="searchToggle"><i class="fa-solid fa-magnifying-glass"></i></button><button class="theme-toggle-btn" id="themeToggle"><i class="fa-solid fa-moon" id="themeIcon"></i></button><a href="subject.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-left"></i> All Chapters</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></nav></header>
+<div id="searchOverlay"><div class="search-box"><div class="search-box-top"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="searchInput" placeholder="Search subjects, chapters, topics…" autocomplete="off" /><button class="search-x" id="searchClose"><i class="fa-solid fa-xmark"></i></button></div><div class="search-results-wrap" id="searchResults"></div></div></div>
+<nav class="mobile-nav" id="mobileNav"><a href="index.html">Home</a><a href="year1.html">1st Year</a><a href="year2.html">2nd Year</a><a href="syllabus.html">Syllabus</a><a href="about.html">About</a></nav>
+<div class="chapter-action-bar"><div class="cab-inner"><div class="cab-left"><span class="read-time"><i class="fa-solid fa-clock"></i> ~35 min read</span><span class="badge badge-primary">Pharmaceutics I</span><span class="badge badge-secondary">Chapter 4</span></div><div class="cab-right"><a href="pdfs/ch4-suspensions.pdf" download class="print-btn"><i class="fa-solid fa-file-pdf"></i> Download PDF</a><button class="wa-btn" id="whatsappShare"><i class="fa-brands fa-whatsapp"></i> Share</button></div></div></div>
+<div class="page-hero"><div class="container"><nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><a href="year1.html">1st Year</a><span>›</span><a href="subject.html">Pharmaceutics I</a><span>›</span><strong>Chapter 4: Suspensions</strong></nav><h1>Pharmaceutical Suspensions</h1><p>Complete notes — definition, types, Stokes' Law, flocculation, suspending agents, formulation, stability, evaluation and official preparations.</p></div></div>
+
+<main><section style="padding-top:2.5rem;"><div class="container"><div class="two-col-layout">
+<article><div class="chapter-content">
+
+<h2 id="intro">1. Introduction &amp; Definition</h2>
+<p>A <strong>pharmaceutical suspension</strong> is a <strong>coarse dispersion</strong> (heterogeneous, biphasic liquid dosage form) in which insoluble solid particles (dispersed phase) are distributed throughout a liquid vehicle (continuous phase). Suspensions are <strong>thermodynamically unstable</strong> and must be shaken before use.</p>
+<div class="info-box"><h4><i class="fa-solid fa-lightbulb"></i> Official Definition (IP)</h4><p style="margin:0;">Suspensions are preparations containing finely divided drug particles distributed somewhat uniformly throughout a vehicle in which the drug exhibits <strong>minimum solubility</strong>. Particle size: <strong>0.5–5 µm</strong>.</p></div>
+
+<h3>1.1 Advantages of Suspensions</h3>
+<ul>
+  <li>Suitable for drugs that are <strong>insoluble or poorly soluble</strong> in water (Chalk, Bismuth subnitrate, Zinc oxide)</li>
+  <li><strong>Better chemical stability</strong> than solutions — drug not dissolved, less hydrolysis and oxidation</li>
+  <li><strong>Taste masking</strong> — undissolved drug has less taste (e.g., Chloramphenicol palmitate)</li>
+  <li>Can give <strong>prolonged drug action</strong> — depot effect (Insulin zinc suspension, Procaine penicillin)</li>
+  <li>Suitable for drugs <strong>unstable in solution</strong> form</li>
+  <li><strong>Flexible dosing</strong> — adjust dose by changing volume</li>
+  <li>Suitable for <strong>children and elderly</strong> who cannot swallow tablets</li>
+</ul>
+
+<h3>1.2 Disadvantages of Suspensions</h3>
+<ul>
+  <li><strong>Physical instability</strong> — particles settle on standing (sedimentation)</li>
+  <li><strong>Caking</strong> — hard sediment difficult or impossible to redisperse</li>
+  <li><strong>Dose uniformity</strong> difficult — unequal drug distribution</li>
+  <li>Must be <strong>shaken before use</strong> — patient compliance issue</li>
+  <li><strong>Bulky</strong> — inconvenient to carry</li>
+  <li>Shorter shelf life than tablets or capsules</li>
+</ul>
+
+<h2 id="types">2. Classification of Suspensions</h2>
+<h3>2.1 Based on Route of Administration</h3>
+<div class="table-wrap"><table>
+<tr><th>Type</th><th>Characteristics</th><th>Example</th></tr>
+<tr><td><strong>Oral suspensions</strong></td><td>Sweetened, flavoured, for internal use</td><td>Paracetamol susp 125 mg/5 mL, Amoxicillin dry syrup</td></tr>
+<tr><td><strong>Topical suspensions</strong></td><td>Applied to skin, usually aqueous</td><td>Calamine lotion, Zinc oxide lotion</td></tr>
+<tr><td><strong>Ophthalmic suspensions</strong></td><td>Sterile, isotonic, particle size &lt;10 µm</td><td>Prednisolone acetate 1% eye drops</td></tr>
+<tr><td><strong>Otic suspensions</strong></td><td>For ear use</td><td>Cortisporin otic suspension</td></tr>
+<tr><td><strong>Parenteral suspensions</strong></td><td>Sterile, IM/SC only — NEVER IV</td><td>Insulin zinc suspension, Procaine penicillin G</td></tr>
+<tr><td><strong>Dry suspensions</strong></td><td>Dry powder reconstituted with water</td><td>Amoxicillin dry syrup, Cotrimoxazole dry syrup</td></tr>
+</table></div>
+
+<h3>2.2 Based on Electrostatic Interaction (Pharmaceutical Classification)</h3>
+<div class="table-wrap"><table>
+<tr><th>Property</th><th>Flocculated Suspension</th><th>Deflocculated Suspension</th></tr>
+<tr><td>Particle state</td><td>Loose aggregates (flocs)</td><td>Separate, individual particles</td></tr>
+<tr><td>Settling rate</td><td>Fast (large flocs settle quickly)</td><td>Slow (small particles)</td></tr>
+<tr><td>Sediment type</td><td><strong>Loose, porous — easy to redisperse</strong></td><td><strong>Hard, compact — caking — difficult to redisperse</strong></td></tr>
+<tr><td>Appearance</td><td>Turbid, not elegant</td><td>Clear supernatant, elegant</td></tr>
+<tr><td>Sedimentation vol (F)</td><td>High (close to 1)</td><td>Low</td></tr>
+<tr><td>Zeta potential</td><td>Low (near zero) — controlled</td><td>High (&gt;±30 mV)</td></tr>
+<tr><td>Pharmaceutically preferred?</td><td><strong>✅ YES — preferred</strong></td><td>❌ No (caking problem)</td></tr>
+</table></div>
+<div class="info-box secondary"><h4>⭐ Why Flocculated is Preferred — Exam Important!</h4><p style="margin:0;">Flocculated suspensions settle <em>faster</em> (large flocs) but form a <strong>loose, porous sediment</strong> that is easily redispersed by gentle shaking. Deflocculated suspensions settle slowly but form a <strong>hard cake</strong> that cannot be redispersed — making them pharmaceutically unacceptable for use.</p></div>
+
+<h2 id="theory">3. Theory — Sedimentation &amp; Stokes' Law</h2>
+<p>Suspended particles denser than the liquid medium settle under gravity — this is <strong>sedimentation</strong>. The rate is described by <strong>Stokes' Law</strong>.</p>
+
+<h3 id="stokes">3.1 Stokes' Law (Must Know!)</h3>
+<div class="info-box accent"><h4>📐 Stokes' Law Formula</h4>
+<p style="margin:.5rem 0;font-size:1.1rem;text-align:center;"><strong>V = d²(ρs − ρl) × g / 18η</strong></p>
+<p style="margin:0;"><strong>V</strong> = settling velocity (cm/sec)<br>
+<strong>d</strong> = particle diameter (cm) — <em>most critical factor (d²)</em><br>
+<strong>ρs</strong> = density of solid particles (g/mL)<br>
+<strong>ρl</strong> = density of liquid vehicle (g/mL)<br>
+<strong>g</strong> = gravitational acceleration (980 cm/sec²)<br>
+<strong>η</strong> = viscosity of dispersion medium (poise)</p></div>
+
+<h3>3.2 Methods to Reduce Sedimentation</h3>
+<div class="table-wrap"><table>
+<tr><th>Factor in Stokes' Law</th><th>How to Reduce V</th><th>Pharmaceutical Method</th></tr>
+<tr><td>Particle size (d²)</td><td>Reduce particle size</td><td>Micronization, ball milling, trituration — <strong>MOST effective</strong></td></tr>
+<tr><td>Density difference (ρs−ρl)</td><td>Reduce density difference</td><td>Add glycerin, sucrose to increase vehicle density</td></tr>
+<tr><td>Viscosity (η)</td><td>Increase viscosity of vehicle</td><td>Add suspending agents (CMC, Tragacanth, Bentonite)</td></tr>
+</table></div>
+
+<h3>3.3 Zeta Potential and Stability</h3>
+<p><strong>Zeta potential</strong> = electric potential at the slipping plane of particles. Measure of repulsive forces between particles.</p>
+<ul>
+  <li><strong>&gt;±30 mV</strong> = high repulsion = deflocculated (particles repel each other, settle slowly, risk of caking)</li>
+  <li><strong>Near zero mV</strong> = low repulsion = flocculated (particles clump, settle fast, easy redispersion)</li>
+  <li><strong>Controlled flocculation</strong> = intentionally reducing zeta potential to optimal level by adding electrolytes (NaCl, AlCl₃) — best approach for pharmaceutical suspensions</li>
+</ul>
+
+<h2 id="formulation">4. Formulation of Suspensions</h2>
+<div class="table-wrap"><table>
+<tr><th>Component</th><th>Function</th><th>Examples</th></tr>
+<tr><td><strong>Drug (dispersed phase)</strong></td><td>Active ingredient — insoluble or poorly soluble</td><td>Paracetamol, Chalk, Bismuth subnitrate, Zinc oxide, Sulfadimidine</td></tr>
+<tr><td><strong>Vehicle (continuous phase)</strong></td><td>Liquid carrier</td><td>Purified water, Syrup BP, Sorbitol solution</td></tr>
+<tr><td><strong>Suspending agent</strong></td><td>Increase viscosity, reduce settling</td><td>CMC, Tragacanth, Bentonite, HPMC, Carbopol</td></tr>
+<tr><td><strong>Wetting agent</strong></td><td>Reduce contact angle, help hydrophobic drug wet</td><td>Polysorbate 80 (Tween 80), SLS, Poloxamer 188</td></tr>
+<tr><td><strong>Flocculating agent</strong></td><td>Reduce zeta potential — controlled flocculation</td><td>Electrolytes: NaCl, KCl, AlCl₃ (cationic)</td></tr>
+<tr><td><strong>Preservative</strong></td><td>Prevent microbial growth</td><td>Benzalkonium chloride, Sodium benzoate, Methyl paraben</td></tr>
+<tr><td><strong>Sweetener</strong></td><td>Palatability (oral)</td><td>Sucrose, Saccharin sodium, Sorbitol</td></tr>
+<tr><td><strong>Flavour</strong></td><td>Taste masking</td><td>Orange, strawberry, peppermint essence</td></tr>
+<tr><td><strong>Buffer</strong></td><td>pH control — drug and physical stability</td><td>Phosphate buffer, Citrate buffer</td></tr>
+<tr><td><strong>Colour</strong></td><td>Identification and appearance</td><td>Carmoisine, Sunset yellow</td></tr>
+</table></div>
+
+<h3 id="suspending-agents">4.2 Suspending Agents — Detailed Classification</h3>
+<h4>A. Natural Gums (Hydrocolloids)</h4>
+<div class="table-wrap"><table>
+<tr><th>Agent</th><th>Concentration</th><th>pH Stability</th><th>Key Notes</th></tr>
+<tr><td><strong>Tragacanth</strong></td><td>0.1–2%</td><td>pH 4–8</td><td>Best natural suspending agent for pharma; stable over wide pH range</td></tr>
+<tr><td><strong>Acacia (Gum arabic)</strong></td><td>5–10%</td><td>pH 2–10</td><td>Good emulsifying and suspending agent; risk of Pseudomonas contamination</td></tr>
+<tr><td><strong>Xanthan gum</strong></td><td>0.1–0.5%</td><td>Wide</td><td>Excellent pseudoplastic flow; used in modern formulations</td></tr>
+<tr><td>Guar gum</td><td>0.5–1%</td><td>Neutral</td><td>Good viscosity, cheap</td></tr>
+</table></div>
+
+<h4>B. Semisynthetic Celluloses (Most Important Group)</h4>
+<div class="table-wrap"><table>
+<tr><th>Agent</th><th>Abbreviation</th><th>Concentration</th><th>Key Notes</th></tr>
+<tr><td>Carboxymethylcellulose sodium</td><td><strong>NaCMC / CMC</strong></td><td>0.5–1.5%</td><td><strong>Most widely used suspending agent</strong>; anionic — incompatible with cationic drugs; do not use with Bentonite</td></tr>
+<tr><td>Hydroxypropyl methylcellulose</td><td><strong>HPMC</strong></td><td>0.5–1%</td><td>Excellent; non-ionic; used in ophthalmic and oral suspensions</td></tr>
+<tr><td>Methylcellulose</td><td><strong>MC</strong></td><td>1–2%</td><td>Thermogelling (gels on heating, liquefies on cooling)</td></tr>
+<tr><td>Hydroxypropyl cellulose</td><td>HPC</td><td>0.5–1%</td><td>Good suspending and film-forming properties</td></tr>
+</table></div>
+
+<h4>C. Clays (Inorganic Colloids)</h4>
+<div class="table-wrap"><table>
+<tr><th>Agent</th><th>Concentration</th><th>Key Notes</th></tr>
+<tr><td><strong>Bentonite</strong></td><td>0.5–5%</td><td>Aluminium magnesium silicate; thixotropic; anionic — incompatible with cationic drugs and NaCMC</td></tr>
+<tr><td><strong>Veegum</strong> (Magnesium aluminium silicate)</td><td>0.5–2%</td><td>More refined than bentonite; excellent for topical suspensions</td></tr>
+<tr><td>Kaolin</td><td>10–30%</td><td>Used in topical suspensions (kaolin poultice)</td></tr>
+</table></div>
+
+<h4>D. Synthetic Polymers</h4>
+<ul>
+  <li><strong>Carbomer (Carbopol)</strong> — 0.1–0.5%; highly efficient; must be neutralised with <strong>triethanolamine (TEA)</strong> to form gel/increase viscosity</li>
+  <li><strong>Povidone (PVP)</strong> — 0.5–5%; thickening and stabilising agent</li>
+</ul>
+
+<h3>4.3 Wetting Agents</h3>
+<p>Hydrophobic drugs need wetting agents to reduce the contact angle so water can wet the drug surface:</p>
+<ul>
+  <li><strong>Surfactants:</strong> Polysorbate 80 (Tween 80) — most used; Sodium lauryl sulfate (SLS); Poloxamer 188</li>
+  <li><strong>Hydrophilic colloids:</strong> Acacia, Tragacanth — act as both wetting and suspending agents</li>
+  <li><strong>Solvents as wetting aids:</strong> Glycerin, Propylene glycol (1–5%)</li>
+</ul>
+
+<h2 id="preparation">5. Preparation of Suspensions</h2>
+<h3>5.1 Dispersion Method (Most Common — for hydrophilic drugs)</h3>
+<ol>
+  <li>Reduce particle size by <strong>trituration or micronization</strong></li>
+  <li>Prepare <strong>suspending agent mucilage</strong> (dissolve/swell in part of the vehicle)</li>
+  <li>Triturate drug with a small quantity of vehicle → smooth paste</li>
+  <li>Add suspending agent mucilage gradually with continuous stirring</li>
+  <li>Add remaining ingredients (preservative, sweetener, colour, flavour, buffer)</li>
+  <li>Make up to final volume with vehicle</li>
+  <li>Homogenise; pass through colloid mill if needed</li>
+  <li>Label: <strong>"Shake well before use"</strong></li>
+</ol>
+
+<h3>5.2 Precipitation Method (for hydrophobic drugs or ultra-fine particles)</h3>
+<ol>
+  <li>Dissolve drug in water-miscible organic solvent (alcohol, acetone)</li>
+  <li>Add drug solution slowly to aqueous vehicle containing wetting agent while stirring rapidly</li>
+  <li>Drug precipitates as very fine particles (<em>in situ</em> precipitation)</li>
+  <li>Add suspending agent, other excipients, make to volume</li>
+</ol>
+<p><strong>Example:</strong> Sulfur suspension — sulfur dissolved in alcohol, precipitated in water to give very fine particles.</p>
+
+<h3>5.3 Condensation Method (Chemical Reaction)</h3>
+<p>Drug formed in situ by chemical reaction. Example: Bismuth subnitrate suspension formed by reacting bismuth nitrate with NaOH.</p>
+
+<h2 id="stability">6. Stability of Suspensions</h2>
+<div class="table-wrap"><table>
+<tr><th>Stability Problem</th><th>Description</th><th>Cause</th><th>Prevention</th></tr>
+<tr><td><strong>Caking</strong></td><td>Hard, compact sediment — irreversible</td><td>Deflocculated particles, crystal growth at contact points</td><td>Controlled flocculation, proper viscosity</td></tr>
+<tr><td><strong>Ostwald ripening (Crystal growth)</strong></td><td>Large crystals grow at expense of small ones</td><td>Small particles have higher solubility — dissolve and redeposit on large crystals</td><td>Narrow particle size distribution, viscosity enhancers</td></tr>
+<tr><td><strong>Polymorphic transformation</strong></td><td>Drug changes crystal form → altered dissolution and bioavailability</td><td>Temperature fluctuations, solvent effects</td><td>Proper storage, use stable polymorph</td></tr>
+<tr><td><strong>Chemical degradation</strong></td><td>Drug hydrolysis or oxidation</td><td>Water, oxygen, light, temperature</td><td>Antioxidants, proper pH, nitrogen flushing, dark storage</td></tr>
+<tr><td><strong>Microbial growth</strong></td><td>Bacterial/fungal contamination in aqueous system</td><td>Contamination during manufacture/use</td><td>Preservatives, aseptic manufacture, preservative efficacy testing</td></tr>
+<tr><td><strong>Creaming</strong></td><td>Particles float to top (if ρs &lt; ρl) — reversible</td><td>Particle density less than vehicle</td><td>Density matching, increased viscosity</td></tr>
+</table></div>
+
+<h3>6.1 Sedimentation Volume (F)</h3>
+<div class="info-box accent"><h4>📐 Sedimentation Volume</h4>
+<p style="margin:.5rem 0;text-align:center;font-size:1.1rem;"><strong>F = Vu / Vo</strong></p>
+<p style="margin:0;"><strong>Vu</strong> = ultimate (final settled) volume of sediment<br>
+<strong>Vo</strong> = original total volume of suspension<br><br>
+<strong>F = 1</strong> → no settling at all (ideal, but practically difficult)<br>
+<strong>F close to 1</strong> → more stable, better suspension<br>
+<strong>F low (near 0)</strong> → severe settling, hard cake possible</p></div>
+
+<h3>6.2 Degree of Flocculation (β)</h3>
+<div class="info-box"><h4>📐 Degree of Flocculation</h4>
+<p style="margin:.5rem 0;text-align:center;font-size:1.1rem;"><strong>β = F / F∞</strong></p>
+<p style="margin:0;"><strong>F</strong> = sedimentation volume of flocculated suspension<br>
+<strong>F∞</strong> = sedimentation volume of deflocculated (ultimate) suspension<br>
+<strong>β &gt; 1</strong> → flocculated suspension preferred over deflocculated</p></div>
+
+<h2 id="evaluation">7. Evaluation of Suspensions</h2>
+<div class="table-wrap"><table>
+<tr><th>Test</th><th>Purpose</th><th>Method / Instrument</th><th>Standard</th></tr>
+<tr><td><strong>Sedimentation volume (F)</strong></td><td>Physical stability</td><td>Measure Vu and Vo in graduated cylinder over time</td><td>F as close to 1 as possible</td></tr>
+<tr><td><strong>Degree of flocculation (β)</strong></td><td>Compare flocculated vs deflocculated</td><td>Calculate F and F∞</td><td>β &gt; 1 = flocculated preferred</td></tr>
+<tr><td><strong>Redispersibility</strong></td><td>Ease of shaking to redisperse</td><td>Count inversions/shakes needed</td><td>Should redisperse with few shakes</td></tr>
+<tr><td><strong>Zeta potential</strong></td><td>Electrostatic stability</td><td>Zetasizer / Electrophoresis</td><td>&gt;±30 mV = stable deflocculated; controlled low for flocculated</td></tr>
+<tr><td><strong>Particle size analysis</strong></td><td>Uniformity, check for crystal growth</td><td>Optical microscopy, laser diffraction</td><td>As per IP monograph specification</td></tr>
+<tr><td><strong>pH</strong></td><td>Drug and physical stability</td><td>pH meter</td><td>As per IP specification</td></tr>
+<tr><td><strong>Viscosity</strong></td><td>Flow properties</td><td>Brookfield rotary viscometer</td><td>Product-specific range</td></tr>
+<tr><td><strong>Drug content (Assay)</strong></td><td>Dose accuracy</td><td>UV spectrophotometry, HPLC after well-shaking</td><td>90–110% of label claim (IP)</td></tr>
+<tr><td><strong>Microbial limit test</strong></td><td>Microbial safety</td><td>Total aerobic count, E. coli, S. aureus test</td><td>As per IP limits</td></tr>
+<tr><td><strong>Syringeability (parenteral)</strong></td><td>Injectability</td><td>Pass through needle without clogging</td><td>No blockage of needle</td></tr>
+</table></div>
+
+<h2 id="official">8. Official Preparations (IP Examples)</h2>
+<div class="table-wrap"><table>
+<tr><th>Name</th><th>Active Drug</th><th>Use</th><th>Suspending Agent</th></tr>
+<tr><td><strong>Calamine Lotion IP</strong></td><td>Calamine 15% + Zinc oxide 5%</td><td>Antipruritic, soothing skin lotion</td><td>Bentonite + Sodium CMC</td></tr>
+<tr><td><strong>Compound Magnesium Trisilicate Oral Suspension IP</strong></td><td>Mg trisilicate + Al hydroxide</td><td>Antacid</td><td>High solid content — self-suspending</td></tr>
+<tr><td><strong>Sulphadimidine Oral Suspension IP</strong></td><td>Sulphadimidine 500 mg/5 mL</td><td>Antibacterial</td><td>CMC (NaCMC)</td></tr>
+<tr><td><strong>Insulin Zinc Suspension</strong></td><td>Insulin + Zinc acetate</td><td>Diabetes — prolonged action (IM/SC only)</td><td>Acetate buffer maintains microcrystalline form</td></tr>
+<tr><td><strong>Procaine Penicillin Injection</strong></td><td>Procaine penicillin G</td><td>Antibiotic depot injection (IM only — NEVER IV)</td><td>Carboxymethylcellulose</td></tr>
+<tr><td><strong>Barium Sulphate Oral Suspension</strong></td><td>BaSO₄</td><td>X-ray contrast medium for GI tract</td><td>CMC, Sodium alginate</td></tr>
+</table></div>
+
+<h2 id="differences">9. Key Differences for Exam</h2>
+<div class="table-wrap"><table>
+<tr><th>Parameter</th><th>Solution</th><th>Suspension</th><th>Emulsion</th></tr>
+<tr><td>Phases</td><td>Single phase (homogeneous)</td><td>Two phases: solid dispersed in liquid</td><td>Two phases: liquid dispersed in liquid</td></tr>
+<tr><td>Particle size</td><td>&lt;1 nm</td><td><strong>0.5–5 µm</strong></td><td>0.1–100 µm</td></tr>
+<tr><td>Thermodynamic stability</td><td>Stable</td><td>Unstable</td><td>Unstable</td></tr>
+<tr><td>Appearance</td><td>Clear</td><td>Turbid/opaque</td><td>Milky white</td></tr>
+<tr><td>Shake before use</td><td>No</td><td><strong>Yes</strong></td><td>Yes</td></tr>
+<tr><td>Main stability problem</td><td>Chemical degradation</td><td><strong>Caking</strong></td><td><strong>Coalescence/Breaking</strong></td></tr>
+</table></div>
+
+<h2 id="summary">10. Quick Revision Summary</h2>
+<div class="info-box secondary"><h4>📝 Key Points to Remember</h4>
+<ul style="margin:0;">
+  <li>Suspension = heterogeneous, biphasic, <strong>thermodynamically unstable</strong></li>
+  <li>Particle size = <strong>0.5–5 µm</strong>; must shake before use</li>
+  <li><strong>Stokes' Law:</strong> V = d²(ρs−ρl)g / 18η — particle size is most critical factor (d²)</li>
+  <li><strong>Flocculated = pharmaceutically preferred</strong> (loose cake, easy redispersion, no caking)</li>
+  <li>Deflocculated = elegant appearance but forms hard cake</li>
+  <li>Best natural suspending agent: <strong>Tragacanth</strong></li>
+  <li>Best semisynthetic suspending agent: <strong>CMC (NaCMC)</strong></li>
+  <li>Best wetting agent: <strong>Polysorbate 80 (Tween 80)</strong></li>
+  <li>Flocculating agents: <strong>Electrolytes</strong> (reduce zeta potential → controlled flocculation)</li>
+  <li>Zeta potential <strong>&gt;±30 mV</strong> = stable deflocculated suspension</li>
+  <li>Sedimentation volume <strong>F = 1</strong> = ideal (no settling)</li>
+  <li>Degree of flocculation <strong>β = F/F∞ ; β &gt; 1</strong> = flocculated preferred</li>
+  <li>Main stability problem = <strong>Caking</strong> (prevented by controlled flocculation)</li>
+  <li>Parenteral suspensions = <strong>IM/SC ONLY — NEVER INTRAVENOUS (IV)</strong></li>
+  <li>Calamine Lotion IP = Calamine + ZnO suspended using Bentonite + CMC</li>
+</ul></div>
+
+<div class="info-box"><h4>🎯 Previous Year Exam Questions</h4>
+<ol style="margin:0;">
+  <li>Define suspension. Give advantages and disadvantages over solutions.</li>
+  <li>State Stokes' law. What are the factors affecting sedimentation in suspensions?</li>
+  <li>Differentiate between flocculated and deflocculated suspensions with a table.</li>
+  <li>What are suspending agents? Classify with examples.</li>
+  <li>Explain the role of wetting agents in suspension formulation.</li>
+  <li>Explain sedimentation volume. How is it calculated? What is the ideal value?</li>
+  <li>What is zeta potential? Explain its role in suspension stability.</li>
+  <li>Describe the evaluation tests for pharmaceutical suspensions.</li>
+  <li>What is controlled flocculation? How is it achieved?</li>
+  <li>Write a note on Calamine Lotion IP — composition and method of preparation.</li>
+</ol></div>
+
+<div class="content-nav" style="margin-top:2rem;">
+  <a href="ch3-solutions.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Ch 3: Solutions</a>
+  <a href="ch5-emulsions.html" class="btn btn-primary">Next: Emulsions <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+<div class="rating-section">
+  <div class="rating-label">Rate this chapter<small>Help other students by rating these notes</small></div>
+  <div class="star-row">
+    <button class="star-btn" data-v="1">★</button><button class="star-btn" data-v="2">★</button>
+    <button class="star-btn" data-v="3">★</button><button class="star-btn" data-v="4">★</button>
+    <button class="star-btn" data-v="5">★</button>
+    <span id="ratingText" style="margin-left:.5rem;"></span>
+  </div>
+</div>
+</div></article>
+
+<aside class="sidebar-sticky">
+  <div class="toc"><h4><i class="fa-solid fa-list"></i> Chapter Contents</h4><ul>
+    <li><a href="#intro">1. Introduction &amp; Definition</a></li>
+    <li><a href="#types">2. Classification</a></li>
+    <li><a href="#theory">3. Theory &amp; Stokes' Law</a></li>
+    <li><a href="#stokes">— Stokes' Law Formula</a></li>
+    <li><a href="#formulation">4. Formulation</a></li>
+    <li><a href="#suspending-agents">— Suspending Agents</a></li>
+    <li><a href="#preparation">5. Preparation Methods</a></li>
+    <li><a href="#stability">6. Stability</a></li>
+    <li><a href="#evaluation">7. Evaluation Tests</a></li>
+    <li><a href="#official">8. Official Preparations</a></li>
+    <li><a href="#differences">9. Key Differences</a></li>
+    <li><a href="#summary">10. Quick Summary</a></li>
+  </ul></div>
+  <div class="toc" style="margin-top:1rem;"><h4><i class="fa-solid fa-forward"></i> Other Chapters</h4><ul>
+    <li><a href="ch3-solutions.html">← Ch 3: Solutions</a></li>
+    <li><a href="ch5-emulsions.html">Ch 5: Emulsions →</a></li>
+    <li><a href="subject.html">All Chapters →</a></li>
+  </ul></div>
+</aside>
+</div></div></section></main>
+
+<button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand"><div class="footer-logo"><i class="fa-solid fa-flask-vial"></i></div><span class="footer-brand-name">D-Pharma Learn</span></div><p class="footer-desc">Free educational platform for Diploma in Pharmacy students across India.</p><div class="footer-social"><a href="#"><i class="fa-brands fa-youtube"></i></a><a href="#"><i class="fa-brands fa-telegram"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div></div><div class="footer-col"><h4>Pharmaceutics I</h4><ul><li><a href="ch1-history.html">Ch 1: History</a></li><li><a href="ch2-dosage-forms.html">Ch 2: Dosage Forms</a></li><li><a href="ch3-solutions.html">Ch 3: Solutions</a></li><li><a href="ch4-suspensions.html">Ch 4: Suspensions</a></li><li><a href="ch5-emulsions.html">Ch 5: Emulsions</a></li><li><a href="ch6-semisolids.html">Ch 6: Semisolids</a></li><li><a href="ch7-powders.html">Ch 7: Powders</a></li><li><a href="ch8-tablets.html">Ch 8: Tablets</a></li><li><a href="ch9-capsules.html">Ch 9: Capsules</a></li><li><a href="ch10-packaging.html">Ch 10: Packaging</a></li><li><a href="subject.html">All Chapters →</a></li></ul></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="year1.html">1st Year</a></li><li><a href="syllabus.html">Syllabus</a></li><li><a href="search.html">Search Notes</a></li><li><a href="contact.html">Contact</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2024 D-Pharma Learn. Free education for all pharmacy students.</p><p>Made with ❤️ for D-Pharma Students</p></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
